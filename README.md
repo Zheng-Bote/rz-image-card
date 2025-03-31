@@ -1,12 +1,12 @@
 <div id="top" align="center">
-<h1>GH Repo Template</h1>
+<h1>rz-image-card</h1>
 
-<p>Template for new Github repos</p>
+<p>A Web Component to show image-cards.</p>
 
-[Report Issue](https://github.com/Zheng-Bote/repo-template/issues) [Request Feature](https://github.com/Zheng-Bote/repo-template/pulls)
+[Report Issue](https://github.com/Zheng-Bote/rz-image-card/issues) [Request Feature](https://github.com/Zheng-Bote/rz-image-card/pulls)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/repo-template)
+![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/rz-image-card)
 
 </div>
 
@@ -14,10 +14,11 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [Description](#description)
-    - [Features](#features)
+  - [Features](#features)
   - [Status](#status)
     - [Application / Tool](#application--tool)
     - [Documentation](#documentation)
@@ -55,97 +56,135 @@
 
 # Description
 
-![QT](https://img.shields.io/badge/Community-6-41CD52?logo=qt)
-![CXX](https://img.shields.io/badge/C++-20-blue?logo=cplusplus)
-![Rust](https://img.shields.io/badge/Rust-Rocket-lightgrey?logo=rust)
-![Expressif](https://img.shields.io/badge/ESP-32-E7352C?logo=espressif)
-![GHA](https://img.shields.io/badge/Github-Action-black?logo=githubactions)
-![Node](https://img.shields.io/badge/Node-20-blue?logo=tsnode)
-![Angular](https://img.shields.io/badge/Angular-18+-red?logo=angular)
-![Vue](https://img.shields.io/badge/Vue-3+-4FC08D?logo=vuedotjs)
 ![HTML5](https://img.shields.io/badge/HTML-5+-E34F26?logo=html5)
 ![Typescript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript)
 ![Lit.js](https://img.shields.io/badge/Lit.js-324FFF?logo=lit)
 ![CSS3](https://img.shields.io/badge/CSS3-663399?logo=css3)
 
-Repo template with README-template and some Github workflows and Github actions.
+A Web Component to show image-cards.
 
 ### Features
 
 - \[ ] advanced-super-extra-special feature xyz
 
   <br>
-  
+
 - \[x] OSS and license
 - \[x] works as designed
 - \[ ] no bugs
 
 <br>
 
-- \[x] some more or less usefull Github Actions for GH-repo, GH-pages, GH-wiki, CI/CD-Pipelines
-- \[ ] Packagemanager
-- \[ ] Installation routine
-- \[ ] portable application 
-
-<br>
-
-- \[ ] runs on DOS/Windows
-- \[ ] runs on MacOS
-- \[ ] runs on Linux
-- \[ ] runs on iOS
-- \[ ] runs on Android
-- \[ ] runs on HarmonyOS
-
+- \[x] runs on modern Internet Browsern with enabled Javascript
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Status
+# Status
 
-### Application / Tool
-
-![GitHub Created At](https://img.shields.io/github/created-at/Zheng-Bote/repo-template)
-![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/repo-template)
+![GitHub Created At](https://img.shields.io/github/created-at/Zheng-Bote/rz-image-card)
+![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/rz-image-card)
 
 ![Status](https://img.shields.io/badge/Status-under_construction-red)
 ![Status](https://img.shields.io/badge/Status-works_as_designed-green)
 
-![GitHub Issues](https://img.shields.io/github/issues/Zheng-Bote/repo-template)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Zheng-Bote/repo-template)
+![GitHub Issues](https://img.shields.io/github/issues/Zheng-Bote/rz-image-card)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Zheng-Bote/rz-image-card)
 
-### Documentation
+# Documentation
 
-_see also:_ [Application Documentation](#documentation) 
+## Usage
 
-#### README
-[![Repo - create Repo-Tree in README.md](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_tree_readme.yml/badge.svg)](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_tree_readme.yml)
-[![Repo - add Actions In/Out to README](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-actions_docu.yml/badge.svg)](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-actions_docu.yml)
+```html
+&lt;rz-image-card&gt; card_img="path/to/image" card_title="optional"
+card_brief="optional" card_desc="optional" //card_btn="optional: modal text"
+card_url_text="optional: URL text" card_url="optional: url"
+&lt;/rz-image-card&gt;
+```
 
-[![Repo - update Readme](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-call_Readme.yml/badge.svg)](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-call_Readme.yml)
+### html example
 
-#### other Markdown files
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-[![Repo - create TOC of Markdown files](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_doctoc_md.yml/badge.svg)](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_doctoc_md.yml)
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rz-image-card</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
 
-create ToC in Markdown files in folders
+    <script type="module" crossorigin src="/assets/index-B5_sMTbN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CBREutKa.css" />
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <rz-image-card
+        card_title="Mr. Douglas Adams"
+        card_brief="English author, humorist, and screenwriter"
+        card_desc="Creator of &laquo;The Hitchhiker's Guide to the Galaxy&raquo;."
+        card_img="/h2g2.jpg"
+        card_url_text="Original"
+        card_url="https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy#/media/File:H2G2_UK_front_cover.jpg"
+      >
+      </rz-image-card>
+    </div>
+  </body>
+</html>
+```
 
-- .github/actions/\*\*
-- .github/workflows/\*\*
-- dist/\*\*
-- docs/\*\*
+> \[!TIP]
+> _see also:_ [./index.html](./index.html)
+
+### css example
+
+```css
+.card-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+```
+
+> \[!TIP]
+> _see also example:_ [index.css](./index.css)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+# Screenshots
+
+![screenshot](./docs/screenshot.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Installation
 
-bla bla ... everything easy and green with No Code/Low code and without any costs
+```bash
+npm install
+npn run build
+```
+
+- copy content of folder `dist/*` into your web folder
+- add `<script type="module" src="<path/to/>rz-image.card.js"></script>` to your html-header
+- add `<rz-image-card />` to the body of your html-file (don't forget the attributtes).
 
 ## Dependencies
 
-bla bla ... with a little help from my friends
+![Lit.js](https://img.shields.io/badge/Lit.js-324FFF?logo=lit)
+
+Simple. Fast. Web Components.
+
+Lit is a simple library for building fast, lightweight web components.
+
+[Lit.js](https://lit.dev/)
 
 ## folder structure
 
 <!-- readme-tree start -->
+
 ```
 .
 ├── .github
@@ -177,160 +216,8 @@ bla bla ... with a little help from my friends
 
 6 directories, 21 files
 ```
+
 <!-- readme-tree end -->
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Usage/Examples/Tests
-
-bla bla ... usage is intuitive and runs mostly automatically with no needs of any knowledge
-
-```HTML
-<mark> under construction </mark>
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# API Reference
-
-<hr>
-
-![GHA](https://img.shields.io/badge/Github-Action-black?logo=githubactions)
-
-_Inputs/Outputs will be filled automatically by `.github/workflows/repo-actions_docu.yml`_
-
-## Inputs
-
-## Outputs
-
-<hr>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Parameters
-
-**Workflow or program**
-
-| Parameter    | Type     | Description                          |
-| :----------- | :------- | :----------------------------------- |
-| `name`       | `string` | _Optional_ name-of-copyright-holder  |
-| `created`    | `string` | _Optional_ <YYYY>                    |
-| `version`    | `string` | _Optional_ \<v0.0.0>                 |
-| `link_left`  | `string` | _Optional_ link-to-contact-page      |
-| `link_right` | `string` | _Optional_ link-to-legal-notice-page |
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# Documentation
-
-see also: <https://linktodocumentation>
-
-## Architecture
-
-### Github
-
-#### Github Repo
-
-```mermaid
-block-beta
-  columns 4
-  Repo:4
-  block:group1:1
-    columns 1
-    id0[".github"]
-    block:group2:1
-      columns 1
-      id1[["workflows"]]
-      id2[["actions"]]
-    end
-  end
-  docs dist src
-  block:group3:4
-    %% columns auto (default)
-    A["gh-pages"] B["gh-wiki"]
-  end
-```
-
-#### Github Actions / Workflows
-
-```mermaid
-flowchart TD;
-    A[Workflow]-. parameter .->B[[callable Workflow]]
-    B-- parameter -->C[Action]
-    C-->D(README)
-
-    A[Workflow]-. parameter .->E[[callable Workflow]]
-    E-- parameter -->F[Action]
-    F-->J(Markdown files)
-
-    A[Workflow]-->K[[Workflow]]
-    K-->L[Action]
-    L-->M("GH-Pages")
-
-    A[Workflow]-->N[[Workflow]]
-    N-->O[Action]
-    O-->P("GH-Wiki")
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Application
-
-```mermaid
-architecture-beta
-    group api(cloud)[API]
-
-    service db(database)[Database] in api
-    service server0(server)[Webserver] in api
-    service disk2(disk)[Storage] in api
-    service server(server)[Appserver] in api
-
-    db:L -- R:server
-    server0:T -- B:server
-    disk2:T -- B:server
-```
-
-## DevOps
-
-```mermaid
-pie title me
-         "ideas" : 90
-         "time for realizations" : 7
-         "money for realizations" : 3
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Github Page
-
-[![GH-Page](https://img.shields.io/badge/Github-Pages-black?logo=github)](https://www.github.com/Zheng-Bote)
-
-## Github Wiki
-
-[![GH-Wiki](https://img.shields.io/badge/Github-Wiki-black?logo=github)](https://www.github.com/Zheng-Bote)
-
-## Comments
-
-> \[!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> \[!TIP]
-> Helpful advice for doing things better or more easily.
-
-> \[!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> \[!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> \[!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -338,15 +225,9 @@ pie title me
 
 ## License
 
-**This Repo-Template is using the MIT-License**
-
-**_other licenses see files `LICENSE_<name>`\_**
-
-### MIT License
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2024 ZHENG Robert
+Copyright (c) 2025 ZHENG Robert
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -368,29 +249,13 @@ SOFTWARE.
 
         https://choosealicense.com/licenses/mit/
 
-### Apache License
-
-[![Apache License](https://img.shields.io/badge/License-Apache_v2.0-green.svg)](<[https://choosealicense.com/licenses/mit/](http://www.apache.org/licenses/LICENSE-2.0)>)
-
-Copyright (c) 2019 ZHENG Robert
-
-Licensed under the **Apache License, Version 2.0** (the "License"); you may not use this file except in compliance with the License.
-
-You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-
-See the License for the specific language governing permissions and limitations under the License.
-
 ## Authors
 
 - [![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 
 ### Code Contributors
 
-![Contributors](https://img.shields.io/github/contributors/Zheng-Bote/repo-template?color=dark-green)
+![Contributors](https://img.shields.io/github/contributors/Zheng-Bote/rz-image-card?color=dark-green)
 
 [![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rz-image-card</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/rz-image-card.ts"></script>
+  </head>
+  <body>
+    <h1>&lt;rz-image-card/&gt;</h1>
+    <p>A Web Component to show image-cards.</p>
+    <br />
+    Syntax:
+    <code>
+      <pre>
+&lt;rz-image-card&gt;
+  card_img="path/to/image"
+  card_title="optional"
+  card_brief="optional"
+  card_desc="optional"
+  //card_btn="optional: modal text"
+  card_url_text="optional: URL text"
+  card_url="optional: url"
+&lt;/rz-image-card&gt;
+      </pre>
+    </code>
+    <br />
+    <div class="card-wrapper">
+      <rz-image-card
+        card_title="Mr. Douglas Adams"
+        card_brief="English author, humorist, and screenwriter"
+        card_desc="Creator of &laquo;The Hitchhiker's Guide to the Galaxy&raquo;."
+        card_btn="Details"
+        card_img="/ad.png"
+      >
+      </rz-image-card>
+      <rz-image-card
+        card_brief="From Wikipedia, the free encyclopedia"
+        card_img="/h2g2.jpg"
+        card_url_text="Original"
+        card_url="http://localhost:5173/ad.png"
+      >
+      </rz-image-card>
+
+      <rz-image-card
+        card_brief="Marvin the Paranoid Android"
+        card_img="/marvin.jpg"
+      >
+      </rz-image-card>
+
+      <rz-image-card
+        card_title="the Robot"
+        card_brief="little robot on laptop"
+        card_img="/robo_1.png"
+        card_btn="Details"
+      >
+      </rz-image-card>
+      <rz-image-card
+        card_brief="little Robot"
+        card_desc="looking around the corner"
+        card_img="/robo_2.png"
+        card_url_text="Original"
+        card_url="http://localhost:5173/robo_2.png"
+      >
+      </rz-image-card>
+      <rz-image-card
+        card_title="Hello Lit"
+        card_brief="Lit.js"
+        card_desc="Lit is a simple library for building fast, lightweight web components."
+        card_btn="https://lit.dev/"
+        card_img="/lit.svg"
+      >
+      </rz-image-card>
+    </div>
+  </body>
+</html>

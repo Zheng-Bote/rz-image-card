@@ -1,0 +1,90 @@
+:root {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Roboto, Ubuntu,
+    "Segeo UI", "Helvetica Neue", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-decent-lightgrey: oklch(86.69% 0 0);
+  --color-decent-8: oklch(0% 0 0 / 80%);
+  --color-decent-5: oklch(0% 0 0 / 50%);
+}
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  min-height: 350px;
+  position: relative;
+  /*line-height: 5px;*/
+
+  background: rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+
+img {
+  max-width: 100%;
+  max-height: 300px;
+}
+img ~ * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card-text {
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  /*
+          background-color: lightblue;
+          opacity: 0.5;*/
+
+  color: oklch(0% 0 0 / 80%);
+
+  border: 1px solid rgb(223, 217, 217);
+  background: rgba(0, 0, 0, 0.03);
+}
+.card-text p {
+  font-size: 0.8rem;
+}
+
+.card Button {
+  font-size: 0.8rem;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  margin-top: 5px;
+}
+.card Button:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.brief {
+  font-size: 0.8rem;
+  color: oklch(0% 0 0 / 80%);
+}
+.brief::before {
+  content: "» ";
+  color: oklch(0% 0 0 / 80%);
+}
+
+.card_url,
+a:link,
+a:active,
+a:visited {
+  color: var(--color-decent-8);
+  font-size: 0.8rem;
+}
