@@ -95,10 +95,16 @@ A Web Component to show image-cards.
 ## Usage
 
 ```html
-&lt;rz-image-card&gt; card_img="path/to/image" card_title="optional"
-card_brief="optional" card_desc="optional" //card_btn="optional: modal text"
-card_url_text="optional: URL text" card_url="optional: url"
-&lt;/rz-image-card&gt;
+<rz-image-card
+  card_img="path/to/image"
+  card_title="optional"
+  card_brief="optional"
+  card_desc="optional"
+  //card_btn="optional: modal text"
+  card_url_text="optional: URL text"
+  card_url="optional: url"
+/>
+</rz-image-card>
 ```
 
 ### html example
@@ -169,7 +175,7 @@ npn run build
 
 - copy content of folder `dist/*` into your web folder
 - add `<script type="module" src="<path/to/>rz-image.card.js"></script>` to your html-header
-- add `<rz-image-card />` to the body of your html-file (don't forget the attributtes).
+- add `<rz-image-card />` to the body of your html-file (don't forget the attributes).
 
 ## Dependencies
 
