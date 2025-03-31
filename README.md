@@ -184,7 +184,6 @@ Lit is a simple library for building fast, lightweight web components.
 ## folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -206,17 +205,34 @@ Lit is a simple library for building fast, lightweight web components.
 │       ├── repo-create_doctoc.yml_
 │       ├── repo-create_doctoc_md.yml
 │       └── repo-create_tree_readme.yml
+├── .gitignore
 ├── LICENSE
-├── LICENSE_Apache-2
-├── LICENSE_GPL-2
-├── LICENSE_GPL-3
-├── LICENSE_MIT
 ├── README.md
-└── tree.bak
+├── docs
+│   └── screenshot.png
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   ├── ad.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── h2g2.jpg
+│   ├── lit.svg
+│   ├── marvin.jpg
+│   ├── robo_1.png
+│   ├── robo_2.png
+│   └── rz-image-card
+│       └── rz-image-card.css
+├── src
+│   ├── index.css
+│   ├── rz-image-card.ts
+│   └── vite-env.d.ts
+├── tree.bak
+└── tsconfig.json
 
-6 directories, 21 files
+10 directories, 35 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
